@@ -1,0 +1,43 @@
+{
+  "name": "simple-elevenia-clone",
+  "version": "0.1.0",
+  "description": "Simple Elevenia Clone",
+  "main": "main.js",
+  "scripts": {
+    "eslint": "npx eslint",
+    "eslint:fix": "npx eslint --fix",
+    "db:create": "npx sequelize-cli db:create --config \"config/sequelize.json\"",
+    "db:migrate": "npx sequelize-cli db:migrate --migrations-path \"app/database/migrations\"",
+    "db:seed:all": "npx sequelize-cli db:seed:all --seeders-path \"app/database/seeders\"",
+    "start": "node app/main.js",
+    "start:dev": "nodemon app/main.js",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andresianipar/simple-elevenia-clone.git"
+  },
+  "author": "afps9895@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andresianipar/simple-elevenia-clone/issues"
+  },
+  "homepage": "https://github.com/andresianipar/simple-elevenia-clone#readme",
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "nodemon": "^2.0.15",
+    "sequelize-cli": "^6.4.1"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^20.2.1",
+    "axios": "^0.25.0",
+    "fast-xml-parser": "^4.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.14.0",
+    "uuid": "^8.3.2"
+  }
+}

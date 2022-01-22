@@ -1,0 +1,106 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Simple Elevenia Clone",
+    "description": "Simple Elevenia Clone",
+    "version": "0.1.0"
+  },
+  "paths": {
+    "/v1/pull-initial-products": {
+      "get": {
+        "summary": "Pull initial products",
+        "description": "Pulling and saving initial product data from Elevenia",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successfully pulled and saved initial product data"
+          }
+        },
+        "security": [
+          {
+            "JSON Web Token": []
+          }
+        ]
+      }
+    },
+    "/v1/products": {
+      "get": {
+        "summary": "Pull initial products",
+        "description": "Pulling and saving initial product data from Elevenia",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Successfully pulled and saved initial product data"
+          }
+        },
+        "security": [
+          {
+            "JSON Web Token": []
+          }
+        ]
+      },
+      "post": {
+        "summary": "Pull initial products",
+        "description": "Pulling and saving initial product data from Elevenia",
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "a": {
+                    "type": "string"
+                  }
+                },
+                "required": ["a"]
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successfully pulled and saved initial product data"
+          }
+        },
+        "security": [
+          {
+            "JSON Web Token": []
+          }
+        ]
+      },
+      "delete": {
+        "summary": "Pull initial products",
+        "description": "Pulling and saving initial product data from Elevenia",
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "a": {
+                    "type": "string"
+                  }
+                },
+                "required": ["a"]
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successfully pulled and saved initial product data"
+          }
+        },
+        "security": [
+          {
+            "JSON Web Token": []
+          }
+        ]
+      }
+    }
+  }
+}

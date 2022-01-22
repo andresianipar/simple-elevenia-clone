@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "elevenia",
+    "host": "0.0.0.0",
+    "port": "5321",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "elevenia",
+    "host": "0.0.0.0",
+    "port": "5321",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "elevenia",
+    "host": "0.0.0.0",
+    "port": "5321",
+    "dialect": "postgres"
+  }
+}
