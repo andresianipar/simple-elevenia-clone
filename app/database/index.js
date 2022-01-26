@@ -5,20 +5,13 @@ const env = process.env.NODE_ENV || "development";
 
 let sequelize;
 if (env === "production") {
-  sequelize = new Sequelize(
-    process.env.POSTGRES_DB,
-    process.env.POSTGRES_USER,
-    process.env.POSTGRES_PASSWORD,
-    {
-      dialect: process.env.POSTGRES_DIALECT,
-      host: process.env.POSTGRES_HOST,
-      port: process.env.POSTGRES_PORT,
-      logging: false,
-    }
-  );
+  sequelize = new Sequelize(process.env.POSTGRES_URI, {
+    dialect: "postgres",
+    logging: false,
+  });
 } else {
   const config = require(__dirname + "/../../config/sequelize.json")[env];
-  sequelize = new Sequelize(config.database, config.username, config.password, {
+  sequelize = new Sequelize(config.uri, {
     ...config,
     logging: console.log,
   });

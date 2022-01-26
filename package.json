@@ -6,11 +6,9 @@
   "scripts": {
     "eslint": "npx eslint",
     "eslint:fix": "npx eslint --fix",
-    "db:create": "npx sequelize-cli db:create --config \"config/sequelize.json\"",
-    "db:migrate": "npx sequelize-cli db:migrate --migrations-path \"app/database/migrations\"",
-    "db:seed:all": "npx sequelize-cli db:seed:all --seeders-path \"app/database/seeders\"",
-    "start": "node app/main.js",
-    "start:dev": "nodemon app/main.js",
+    "db:migrate": "npx sequelize-cli db:migrate --url $POSTGRES_URI",
+    "start": "npm run db:migrate && node app/main.js",
+    "start:dev": "npm run db:migrate && nodemon app/main.js",
     "test": "npm test"
   },
   "repository": {

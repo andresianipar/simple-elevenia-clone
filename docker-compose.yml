@@ -20,21 +20,15 @@ services:
     build:
       context: .
     environment:
-      NODE_ENV: production
-      POSTGRES_DB: elevenia
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DIALECT: postgres
-      POSTGRES_HOST: postgres
-      POSTGRES_PORT: 5321
+      # 'development' or 'production'
+      NODE_ENV: development
+      POSTGRES_URI: postgres://postgres:postgres@postgres/elevenia
     ports:
       - '3000:8080'
     depends_on:
       - postgres
     volumes:
       - ./:/home/app
-      - /home/app/node_modules
 
 volumes:
   app-db: {}
-    # driver: local
