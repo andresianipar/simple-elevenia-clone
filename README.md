@@ -5,6 +5,7 @@ Simple Elevenia marketplace web app clone. Developed with Node.js, Hapi.js, conn
 # Installation
 ```
 npm install
+docker-compose up -d postgres
 ```
 
 # Starting the application
@@ -18,7 +19,6 @@ npm run start:dev
 
 To run inside container (production mode):
 ```
-docker-compose up -d postgres
 docker-compose up -d app
 ```
 
