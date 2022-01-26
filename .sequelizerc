@@ -2,5 +2,4 @@ const path = require("path");
 
 module.exports = {
   "migrations-path": path.resolve("app/database/migrations"),
-  "seeders-path": path.resolve("app/database/seeders"),
 };

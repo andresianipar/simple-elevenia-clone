@@ -3,13 +3,9 @@
 Simple Elevenia marketplace web app clone. Developed with Node.js, Hapi.js, connected to PostgreSQL
 
 # Installation
-
-1. npm install
-2. npx sequelize-cli db:create
-3. npx sequelize-cli db:migrate
-4. npx sequelize-cli db:seed:all
-
-> [Read more about Sequelize](https://sequelize.org/v7/manual/migrations.html)
+```
+npm install
+```
 
 # Starting the application
 
