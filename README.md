@@ -13,13 +13,13 @@ Simple Elevenia marketplace web app clone. Developed with Node.js, Hapi.js, conn
 
 # Starting the application
 
-To run locally:
+To run locally (development mode):
 ```
 export POSTGRES_URI="postgres://postgres:postgres@0.0.0.0:5321/elevenia"
 npm run start:dev
 ```
 
-To run in production mode:
+To run inside container (production mode):
 ```
 docker-compose up -d postgres
 docker-compose up -d app
